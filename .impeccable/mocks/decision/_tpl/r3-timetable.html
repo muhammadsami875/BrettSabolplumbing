@@ -1,0 +1,39 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Service Timetable sketch</title>
+<style>
+html,body{margin:0;width:1440px;height:900px;overflow:hidden;background:#E8A923;color:#1F2A33;font-family:"Arial Narrow","Helvetica Neue",Arial,sans-serif}
+.top{position:absolute;left:48px;right:48px;top:22px;height:64px;display:flex;align-items:center;gap:0;border-bottom:3px solid #1F2A33}
+.top img{height:56px;margin-right:22px}
+.top b{font:900 26px/1 "Arial Narrow",Arial;letter-spacing:.02em;text-transform:uppercase;margin-right:auto}
+.top span{font:700 17px Arial;text-transform:uppercase;letter-spacing:.08em;padding:0 18px;border-left:2px solid #1F2A33}
+.top em{font-style:normal;background:#1F2A33;color:#E8A923;font:900 22px Arial;padding:12px 18px;margin-left:12px}
+.code{position:absolute;left:48px;top:104px;display:flex;gap:10px;font:900 16px Arial;letter-spacing:.1em}
+.code i{font-style:normal;color:#fff;padding:5px 10px}
+h1{position:absolute;left:48px;top:140px;margin:0;width:700px;font:900 132px/0.86 "Arial Narrow",Impact,sans-serif;text-transform:uppercase;letter-spacing:-.01em}
+.sub{position:absolute;left:48px;top:560px;width:600px;font:700 24px/1.35 Arial}
+.board{position:absolute;left:770px;top:110px;width:622px;height:420px;background:#1F2A33;color:#F4F1E8;transform:skewX(-6deg);box-shadow:0 18px 40px rgba(31,42,51,.35)}
+.board .in{transform:skewX(6deg);padding:20px 34px}
+.board h3{margin:0 0 14px;display:flex;justify-content:space-between;font:900 22px Arial;letter-spacing:.14em;color:#E8A923}
+.r{display:grid;grid-template-columns:150px 1fr 70px;gap:14px;align-items:center;border-top:1px solid rgba(244,241,232,.25);padding:13px 0;font:700 24px Arial}
+.r i{font-style:normal;font-size:16px;padding:4px 8px;text-align:center;color:#fff}
+.form{position:absolute;left:740px;top:560px;width:640px;height:200px;background:#fff;border:3px solid #1F2A33;transform:skewX(-6deg)}
+.form .in{transform:skewX(6deg);padding:18px 30px;display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.form label{font:800 14px Arial;letter-spacing:.12em;text-transform:uppercase}
+.form div.f{border-bottom:3px solid #1F2A33;height:46px}
+.form .go{grid-column:1/4;background:#D71920;color:#fff;text-align:center;font:900 28px Arial;padding:14px;letter-spacing:.06em}
+.strip{position:absolute;left:48px;right:48px;top:800px;display:grid;grid-template-columns:repeat(4,1fr);gap:12px;height:90px}
+.strip img{width:100%;height:100%;object-fit:cover}
+</style></head><body>
+<div class="top"><img src="{{mark}}" alt=""><b>Brett Sabol Plumbing · Service timetable</b><span>Residential</span><span>Commercial</span><span>Jet drain</span><span>Heating</span><em>215.666.3086</em></div>
+<div class="code"><i style="background:#345CAB">PLB</i><i style="background:#D71920">HTG</i><i style="background:#1E8A4C">DRN</i></div>
+<h1>Plumbing, heating &amp; jet drain cleaning</h1>
+<div class="sub">Master Plumber Lic. #43391. Backflow certified. Bucks, Montgomery and Philadelphia from Feasterville-Trevose.</div>
+<div class="board"><div class="in"><h3><span>SERVICE BOARD</span><span>FEASTERVILLE-TREVOSE</span></h3>
+<div class="r"><span>MON to FRI</span><span>Office open 8:00 to 5:00</span><i style="background:#345CAB">PLB</i></div>
+<div class="r"><span>SAT · SUN</span><span>By appointment</span><i style="background:#345CAB">PLB</i></div>
+<div class="r"><span>DAILY</span><span>Emergency line, 24 hours</span><i style="background:#D71920">24H</i></div>
+<div class="r"><span>ROUTES</span><span>Bucks · Montco · Phila</span><i style="background:#1E8A4C">ALL</i></div>
+</div></div>
+<div class="form"><div class="in"><div><label>Service</label><div class="f"></div></div><div><label>Town</label><div class="f"></div></div><div><label>Phone</label><div class="f"></div></div><div class="go">REQUEST SERVICE</div></div></div>
+<div class="strip"><img src="{{van}}" alt=""><img src="{{sewer}}" alt=""><img src="{{heater}}" alt=""><img src="{{crew}}" alt=""></div>
+</body></html>

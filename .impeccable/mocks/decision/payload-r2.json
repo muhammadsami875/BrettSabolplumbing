@@ -1,0 +1,56 @@
+{
+  "title": "Choose the visual world for Brett Sabol Plumbing",
+  "question": "Safer hand, as asked: three familiar directions built on the real logo and the blue and red, plus the category standard. Pick one.",
+  "options": [
+    {
+      "id": "r2-workorder",
+      "kind": "grounded",
+      "label": "Work Order",
+      "lineage": "The carbonless job ticket a plumber leaves on your counter",
+      "thesis": "Clear, written-down service: the site reads like an honest work order, itemized and signed.",
+      "palette": ["#FFFFFF", "#345CAB", "#16191D", "#D71920", "#EEF1F6"],
+      "materials": ["clean white stock", "ruled form lines", "preprinted blue header", "signature line"],
+      "viewport": "White page with the real logo up top, a plain-spoken headline and call button at left, and a service-request ticket at right where the visitor ticks the problem and sends it. Real job photos start at the fold.",
+      "risk": "Calm and trustworthy but quiet. The form styling has to stay light or it starts to feel like paperwork.",
+      "html": ".impeccable/mocks/decision/r2-workorder.html"
+    },
+    {
+      "id": "r2-markers",
+      "kind": "grounded",
+      "label": "Pipe Markers",
+      "lineage": "Color-banded pipe labels and flow arrows in a well-kept mechanical room",
+      "thesis": "The site is labeled like a tidy boiler room: each service is a color band with a flow arrow pointing you to it.",
+      "palette": ["#FFFFFF", "#16191D", "#345CAB", "#D71920", "#1E8A4C"],
+      "materials": ["painted pipe bands", "flow-arrow chevrons", "stenciled capital labels", "galvanized steel gray"],
+      "viewport": "Headline and call button on white, then full-width color bands with arrows naming Plumbing, Heating and Jet Drain Cleaning, each one a link to its page.",
+      "risk": "Tidy and industrial, closest to a commercial contractor. Homeowners may find it a touch technical.",
+      "html": ".impeccable/mocks/decision/r2-markers.html"
+    },
+    {
+      "id": "r2-drawing",
+      "kind": "grounded",
+      "label": "Shop Drawing",
+      "lineage": "Plumbing riser diagrams and isometric shop drawings",
+      "thesis": "Master-level planning shown as the drawing behind the job: fine isometric pipe lines and a title block frame the real photos.",
+      "palette": ["#FFFFFF", "#345CAB", "#16191D", "#D71920", "#E7ECF4"],
+      "materials": ["isometric linework", "dimension callouts", "title block", "detail frames"],
+      "viewport": "White page, a thin isometric riser drawing behind the headline, the license number in a drawing title block, and the van photo framed as Detail A with a callout.",
+      "risk": "Blueprint linework is a familiar trades-site move and can fade into wallpaper.",
+      "html": ".impeccable/mocks/decision/r2-drawing.html"
+    }
+  ],
+  "reroll": {"registers": ["safer", "bolder"]},
+  "buildPath": {"value": "code", "toggle": false},
+  "canon": true,
+  "canonCard": {
+    "kind": "canon",
+    "label": "The category standard",
+    "thesis": "The premium plumber site played straight, at the craft level of Roto-Rooter, Benjamin Franklin Plumbing and Mr. Rooter.",
+    "palette": ["#FFFFFF", "#0F2A4F", "#345CAB", "#D71920"],
+    "materials": ["truck photo hero", "trust row", "service card grid", "review band"],
+    "viewport": "The van photo with headline and two buttons at left, a trust row of verified credentials, and service cards below.",
+    "risk": "Indistinguishable from the competition by design.",
+    "html": ".impeccable/mocks/decision/r2-canon.html"
+  },
+  "steer": true
+}

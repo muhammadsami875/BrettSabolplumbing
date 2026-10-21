@@ -1,0 +1,30 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>Arcade Cabinet sketch</title>
+<style>
+html,body{margin:0;width:1440px;height:900px;overflow:hidden;background:#07080C;color:#F4F1E8;font-family:"Lucida Console","Courier New",monospace}
+body::after{content:"";position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.35) 0 2px,transparent 2px 4px);pointer-events:none}
+.hud{position:absolute;left:48px;right:48px;top:26px;display:flex;justify-content:space-between;font:700 22px "Lucida Console",monospace;letter-spacing:.12em}
+.hud span:nth-child(1){color:#F2C230}.hud span:nth-child(3){color:#D71920}
+h1{position:absolute;left:48px;top:110px;margin:0;font:900 96px/1 "Lucida Console","Courier New",monospace;letter-spacing:.02em;text-transform:uppercase}
+h1 .b{color:#345CAB;text-shadow:6px 6px 0 #1a2c55}h1 .r{color:#D71920;text-shadow:6px 6px 0 #5a0b0e}
+.ground{position:absolute;left:0;right:0;top:520px;height:24px;background:repeating-linear-gradient(90deg,#345CAB 0 24px,#2a4a8c 24px 48px)}
+.truck{position:absolute;left:880px;top:392px;width:220px;height:128px}
+.truck i{position:absolute;background:#F4F1E8}
+.menu{position:absolute;left:48px;top:580px;width:760px;font:700 26px "Lucida Console",monospace;letter-spacing:.06em}
+.menu h3{margin:0 0 14px;color:#F2C230;font-size:24px;letter-spacing:.2em}
+.menu div{display:grid;grid-template-columns:1fr 1fr;gap:10px 30px}
+.menu span::before{content:"\25B6  ";color:#07080C}.menu span:first-child::before{color:#D71920}
+.press{position:absolute;right:48px;top:600px;width:520px;border:6px solid #F4F1E8;padding:22px;text-align:center}
+.press b{display:block;font:900 30px "Lucida Console",monospace;color:#F2C230;letter-spacing:.2em}
+.press em{display:block;font-style:normal;font:900 64px "Lucida Console",monospace;margin-top:10px}
+.screen{position:absolute;left:1090px;top:100px;width:300px;height:220px;border:6px solid #345CAB;image-rendering:pixelated}
+.screen img{width:100%;height:100%;object-fit:cover}
+</style></head><body>
+<div class="hud"><span>LIC 43391</span><span>BACKFLOW CERT</span><span>24H EMERGENCY</span></div>
+<h1><span class="b">Plumbing</span><br><span class="r">Heating &amp;</span><br>Jet drain</h1>
+<div class="screen"><img src="{{van}}" alt=""></div>
+<svg class="truck" viewBox="0 0 22 13" shape-rendering="crispEdges"><rect x="0" y="2" width="14" height="8" fill="#F4F1E8"/><rect x="1" y="3" width="5" height="4" fill="#345CAB"/><rect x="7" y="3" width="6" height="2" fill="#345CAB"/><rect x="7" y="5" width="6" height="2" fill="#D71920"/><rect x="14" y="5" width="6" height="5" fill="#F4F1E8"/><rect x="15" y="6" width="3" height="2" fill="#345CAB"/><rect x="2" y="10" width="3" height="3" fill="#222"/><rect x="15" y="10" width="3" height="3" fill="#222"/></svg>
+<div class="ground"></div>
+<div class="menu"><h3>SELECT SERVICE</h3><div><span>Residential</span><span>Commercial</span><span>Jet drain</span><span>Sewer line</span><span>Heating</span><span>Backflow</span></div></div>
+<div class="press"><b>PRESS CALL</b><em>215.666.3086</em></div>
+</body></html>
